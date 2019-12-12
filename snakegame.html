@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<canvas id="gc" width="400" height="400"></canvas>
+<canvas id="gc" width="500" height="500"></canvas>
 <script>
 window.onload=function() {
 	canv=document.getElementById("gc");
@@ -34,7 +34,7 @@ function game() {
 	if(py>tc-1) {
 		py= 0;
 	}
-	ctx.fillStyle="black";
+	ctx.fillStyle="grey";
 	ctx.fillRect(0,0,canv.width,canv.height);
 
 	ctx.fillStyle="lime";

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Lora&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style type="text/css">
+	*{
+		margin: 0; padding:0; 
+		box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+
+	}
+	body{
+		display: flex;
+			justify-content: center;
+			align-items: center;
+		min-height: 100vh
+	}
+	.container-fluid{
+		position: relative;
+		width: 1100px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+    .container-fluid .box{
+	position: relative;
+	width: 275px;
+	height: 275px;
+	overflow: hidden;
+	transition: 1s;
+}
+.container-fluid .box:hover{
+	z-index: 1;
+	transform: scale(1.25);
+	box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.container-fluid .box .imgBx{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.container-fluid .box .imgBx:before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: linear-gradient(180deg,#f00,#000); 
+	mix-blend-mode: multiply;
+	opacity: 0;
+	transition: 0.5s;
+}
+.container-fluid .box .imgBx img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.container-fluid .box:hover .imgBx:before{
+opacity: 1;
+}
+
+.container-fluid .box .content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	display: flex;
+	padding: 20px;
+	align-items: flex-end;
+
+}
+
+.container-fluid .box .content h2
+{
+	color: #fff;
+	transition: 0.5s;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 20px;
+	transform:translateY(200px);
+}
+.container-fluid .box:hover .content h2
+{
+	transform:translateY(0);
+	transition-delay: 0.6s;
+}
+
+.container-fluid .box .content p{
+	color: white;
+	transform:translateY(200px);
+	transition: 0.5s;
+	font-size: 14px;
+
+}
+.container-fluid .box:hover .content p{
+transform:translateY(0);	
+transition:0.6s;
+	
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<div class="container-fluid">
+		<div class="box">
+			<div class="imgBx">
+				<img src="mohit2.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p> DONATION FOR SUPPORT:    PhonePay = vinodbahadur@ybl      
+					GooglePay: vbthapa55@oksbi   Believe me, all this money will
+					 be used to make more quality videos and to make my channel grow.</p>
+				</div>
+			</div>
+		</div>
+			<div class="box">
+			<div class="imgBx">
+				<img src="UI-face-2.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p> DONATION FOR SUPPORT:    PhonePay = vinodbahadur@ybl      
+					GooglePay: vbthapa55@oksbi   Believe me, all this money will
+					 be used to make more quality videos and to make my channel grow.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img src="UI-face-1.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p> DONATION FOR SUPPORT:    PhonePay = vinodbahadur@ybl      
+					GooglePay: vbthapa55@oksbi   Believe me, all this money will
+					 be used to make more quality videos and to make my channel grow.</p>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBx">
+				<img src="UI-face-2.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Image Title</h2>
+					<p> DONATION FOR SUPPORT:    PhonePay = vinodbahadur@ybl      
+					GooglePay: vbthapa55@oksbi   Believe me, all this money will
+					 be used to make more quality videos and to make my channel grow.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

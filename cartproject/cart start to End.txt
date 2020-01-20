@@ -1,0 +1,49 @@
+1. Create Database IN MYSQL(PHPMYADMIN)
+2.Create 3 tables
+	1-(product table) in which you enter your all product details with their images
+---------------------------------------------------------------------
+id
+product_name
+product_price
+product_image
+product_code
+------------------------------------------------------------------------
+	2-(cart table )
+
+id
+product_name
+product_price
+product_image
+qty
+total_price
+product_code
+
+in cart table data will be store which you were select from product table  like the product datail(id,image and the qty)
+-----------------------------------------------
+			3-order table
+id
+name
+email
+phone
+address
+pmode
+products
+amount_paid
+
+
+in this section we store user deatils 
+------------------------------------------------------------------------------------------------------
+
+3- login / logout user
+create a table in database with the name of etc--
+make to columns
+	1-user
+	2-pass
+------------------------------------------------------
+database name--system_cart
+tables--- product
+              orders
+               cart
+            admintable
+ 
+*******only you have to make database and table with this name or etc************
